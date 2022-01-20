@@ -1,4 +1,4 @@
-package ms.reference.ReferenceApp
+package ms.reference.referenceApp
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
