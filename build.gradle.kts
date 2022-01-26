@@ -9,6 +9,7 @@ plugins {
 //from gradle.properties
 val kotlinJvmTarget: String by project
 val tbdCompilerArgs: String by project
+val mockkVersion: String by project
 
 //project specific
 group = "ms.reference"
@@ -25,6 +26,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("io.mockk:mockk:$mockkVersion")
 }
 
 tasks.withType<KotlinCompile> {
