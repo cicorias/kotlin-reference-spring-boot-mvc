@@ -33,13 +33,14 @@ internal class HelloControllerTest @Autowired constructor(
             .andDo { print() }
             .andExpect {
                 status { isOk() }
-                content { contentType(MediaType.APPLICATION_JSON) }
+                content { contentType("text/plain;charset=UTF-8") }
+                content {
+                    string("Mock Person")
 //                jsonPath("$.trust") { value("3.14") }
 //                jsonPath("$.default_transaction_fee") { value("17") }
-
+                }
             }
     }
-
     @Value("\${myprodsetting:not provided}")
     lateinit var settingOne: String
 
