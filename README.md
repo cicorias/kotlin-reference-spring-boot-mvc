@@ -3,6 +3,9 @@
 Figure out the use of activeprofile ONLY in the application.yml file vs. in code @ActiveProfile
 Modify the controller to return a json obj that includes these values.
 
+an annotation approach: https://stackoverflow.com/a/39690595/140618
+
+
 https://stackoverflow.com/a/61425251/140618
 As a general rule, I avoid using Mockito with Kotlin tests (search StackOverflow for a couple of reasons why), or even mockito-kotlin. Best practice nowadays is to use the excellent MockK library in combination with either AssertJ or assertk for verifying your expectations.
 
